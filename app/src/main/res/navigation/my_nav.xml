@@ -8,16 +8,17 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.roomdatabasepractice.ListFragment"
-        android:label="fragment_list"
+        android:label="All Data"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_list_to_add"
-            app:destination="@id/addFragment" />
+            app:destination="@id/addFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.roomdatabasepractice.AddFragment"
-        android:label="fragment_add"
+        android:label="Add New Data"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_add_to_list"

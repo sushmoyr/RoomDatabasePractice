@@ -8,4 +8,8 @@
     <string name="age">Age</string>
     <string name="last_name">Last Name</string>
     <string name="first_name">First Name</string>
+    <string name="_1">1</string>
+    <string name="john">John</string>
+    <string name="doe">Doe</string>
+    <string name="_25">(25)</string>
 </resources>
