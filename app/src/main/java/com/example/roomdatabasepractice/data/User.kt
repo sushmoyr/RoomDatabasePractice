@@ -9,6 +9,5 @@ data class User (
     var id:Int,
     var firstName: String,
     var lastName: String,
-    var age: Int
+    var age: Int)
 
-)
