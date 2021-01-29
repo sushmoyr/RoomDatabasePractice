@@ -12,4 +12,5 @@
     <string name="john">John</string>
     <string name="doe">Doe</string>
     <string name="_25">(25)</string>
+    <string name="update_data">Update Data</string>
 </resources>

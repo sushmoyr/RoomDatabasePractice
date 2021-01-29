@@ -14,6 +14,9 @@
             android:id="@+id/action_list_to_add"
             app:destination="@id/addFragment"
             app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_listFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
@@ -23,5 +26,17 @@
         <action
             android:id="@+id/action_add_to_list"
             app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.example.roomdatabasepractice.UpdateFragment"
+        android:label="Update Data"
+        tools:layout="@layout/fragment_update" >
+        <action
+            android:id="@+id/action_updateFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.roomdatabasepractice.data.User" />
     </fragment>
 </navigation>
