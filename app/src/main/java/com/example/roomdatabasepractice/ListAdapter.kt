@@ -25,6 +25,7 @@ class ListAdapter : RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
         holder.itemView.textView_FirstName.text = currentItem.firstName
         holder.itemView.textView_lastName.text = currentItem.lastName
         holder.itemView.textView_age.text = currentItem.age.toString()
+        holder.itemView.profile_photo.setImageBitmap(currentItem.profilePhoto)
 
         holder.itemView.row_layout.setOnClickListener {
             val action = ListFragmentDirections.actionListFragmentToUpdateFragment(currentItem)

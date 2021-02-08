@@ -43,4 +43,14 @@ class UserViewModel(application: Application) : AndroidViewModel(application) {
             repository.deleteAllUser()
         }
     }
+
+    fun searchDatabase(searchQuery: String): LiveData<List<User>> {
+        return repository.searchDatabase(searchQuery)
+    }
+
+    fun sortData(): LiveData<List<User>>
+    {
+        return repository.sortData()
+    }
+
 }
